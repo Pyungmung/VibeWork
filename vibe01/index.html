@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | 프런트엔드 개발자 & UI/UX 디자이너</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">PORTFOLIO<span>.</span></a>
+            <button class="mobile-toggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-image-wrapper fade-in">
+                    <img src="vibe01/images/profile.png" alt="프로필 이미지" class="profile-img" onerror="this.src='https://via.placeholder.com/180/90CAF9/0D47A1?text=Profile'">
+                </div>
+                <div class="hero-content fade-in">
+                    <span class="badge">Front-end Developer & UI/UX Designer</span>
+                    <h1 class="hero-title">사용자 경험을 고민하고<br><span class="highlight">가치를 만드는 개발자</span>입니다.</h1>
+                    <p class="hero-subtitle">10년 경력의 노하우로 직관적이고 심미적인 웹 인터페이스를 설계하고 완벽하게 구현합니다.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-outline">문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>About Me</h2>
+                    <p class="section-desc">디자인과 코드의 경계를 허물며 유저 중심의 가치를 전달합니다.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="card about-card fade-in">
+                        <div class="card-icon">💡</div>
+                        <h3>직관적인 UI/UX</h3>
+                        <p>사용자 행동 흐름을 분석하여 복잡한 프로세스를 단순하고 직관적인 인터페이스로 시각화합니다.</p>
+                    </div>
+                    <div class="card about-card fade-in">
+                        <div class="card-icon">⚡</div>
+                        <h3>성능 최적화 & 반응형</h3>
+                        <p>다양한 디바이스 환경에서 빠르게 동작하고 아름답게 표현되는 웹 생태계를 구축합니다.</p>
+                    </div>
+                    <div class="card about-card fade-in">
+                        <div class="card-icon">🤝</div>
+                        <h3>원활한 협업</h3>
+                        <p>디자이너와 개발자 사이의 가교 역할을 수행하며 기획 단계부터 완성까지 함께 호흡합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Skills & Expertise</h2>
+                    <p class="section-desc">지속적인 기술 학습과 시도로 탄탄한 역량을 쌓아가고 있습니다.</p>
+                </div>
+                
+                <div class="skills-wrapper">
+                    <div class="card skill-card fade-in">
+                        <h3 class="skill-category-title">Front-end Development</h3>
+                        <div class="skill-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">Responsive Web Design</span>
+                            <span class="tag">Web Accessibility</span>
+                            <span class="tag">Performance Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card skill-card fade-in">
+                        <h3 class="skill-category-title">UI/UX & Design</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Wireframing</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Design System</span>
+                            <span class="tag">Interaction Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Featured Projects</h2>
+                    <p class="section-desc">대표적인 작업물과 기술적 도전 과제들입니다.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="card project-card fade-in">
+                        <div class="project-header">
+                            <span class="project-type">Web Application</span>
+                            <h3>스마트 대시보드 UI 시스템</h3>
+                        </div>
+                        <p class="project-desc">대용량 데이터를 한눈에 파악할 수 있는 미니멀하고 반응형 중심의 관리자 대시보드 페이지입니다.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JS ES6+</span>
+                        </div>
+                    </div>
+
+                    <div class="card project-card fade-in">
+                        <div class="project-header">
+                            <span class="project-type">Mobile & Web</span>
+                            <h3>브랜드 랜딩 페이지 제작</h3>
+                        </div>
+                        <p class="project-desc">감각적인 애니메이션과 매끄러운 스크롤 인터랙션이 적용된 반응형 웹사이트입니다.</p>
+                        <div class="project-tech">
+                            <span>UI/UX</span>
+                            <span>CSS Grid/Flex</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="card project-card fade-in">
+                        <div class="project-header">
+                            <span class="project-type">Design System</span>
+                            <h3>통합 웹 컴포넌트 라이브러리</h3>
+                        </div>
+                        <p class="project-desc">재사용성과 접근성을 고려하여 일관된 디자인 가이드라인을 제공하는 커스텀 UI 라이브러리입니다.</p>
+                        <div class="project-tech">
+                            <span>Design System</span>
+                            <span>CSS Variable</span>
+                            <span>ES6 Module</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Contact Me</h2>
+                    <p class="section-desc">새로운 프로젝트나 협업 기회가 있다면 언제든 연락해 주세요.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="card contact-info-card fade-in">
+                        <h3>Get in Touch</h3>
+                        <p class="contact-subtext">함께 고민하고 만들어갈 멋진 아이디어를 기다립니다.</p>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong class="item-title">Email</strong>
+                                <p>contact@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong class="item-title">Phone</strong>
+                                <p>010-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong class="item-title">Location</strong>
+                                <p>Seoul, South Korea</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="card contact-form fade-in" onsubmit="event.preventDefault(); alert('메시지가 성공적으로 발송되었습니다.');">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" required placeholder="홍길동">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">메시지</label>
+                            <textarea id="message" rows="5" required placeholder="메시지 내용을 입력해주세요..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">메시지 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Senior Front-end Developer & UI/UX Designer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

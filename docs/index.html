@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8e8">
+  <title>푸드 이모지 짝찾기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <div class="title-block">
+        <p class="eyebrow">TASTE MATCH</p>
+        <h1>푸드 이모지 짝찾기</h1>
+        <p class="subtitle">같은 음식 이모지를 찾아 짝을 맞혀보세요.</p>
+      </div>
+      <button class="restart-button" id="restartButton" type="button">
+        <span aria-hidden="true">↻</span>
+        다시 시작
+      </button>
+    </header>
+
+    <section class="score-strip" aria-label="게임 기록">
+      <div class="score-card score-card--accent">
+        <span class="score-label">현재 점수</span>
+        <strong id="scoreValue">0</strong>
+      </div>
+      <div class="score-card">
+        <span class="score-label">맞힌 쌍</span>
+        <strong><span id="matchesValue">0</span><small> / 24</small></strong>
+      </div>
+      <div class="score-card">
+        <span class="score-label">시도 횟수</span>
+        <strong id="attemptsValue">0</strong>
+      </div>
+    </section>
+
+    <section class="board-wrap" aria-labelledby="boardHeading">
+      <div class="board-heading">
+        <h2 id="boardHeading">오늘의 맛있는 기억</h2>
+        <span id="statusMessage" role="status" aria-live="polite">카드 두 장을 골라보세요.</span>
+      </div>
+      <div class="game-board" id="gameBoard" role="grid" aria-label="음식 이모지 짝찾기 보드"></div>
+    </section>
+
+    <p class="hint"><span aria-hidden="true">✦</span> 카드를 눌러도 되고, 손가락이나 마우스로 이어서 선택해도 좋아요.</p>
+  </main>
+
+  <section class="result-overlay" id="resultOverlay" aria-hidden="true" role="dialog" aria-labelledby="resultTitle">
+    <div class="result-panel">
+      <span class="result-icon" aria-hidden="true">🎉</span>
+      <p class="eyebrow">ALL MATCHED</p>
+      <h2 id="resultTitle">게임 클리어!</h2>
+      <p>맛있는 짝을 모두 찾아냈어요.</p>
+      <div class="result-stats">
+        <span>최종 점수 <strong id="finalScore">0</strong></span>
+        <span>총 시도 <strong id="finalAttempts">0</strong></span>
+      </div>
+      <button class="play-again-button" id="playAgainButton" type="button">새 게임 시작</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
